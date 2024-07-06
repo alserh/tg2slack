@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 require("dotenv").config();
 const { Bot } = require("grammy");
-const { slackPostMessage } = require("./knockSlack");
+const { slackPostMessage } = require("./slackBot/slackPostMessage");
 
 const tgToken = process.env.TG_API_TOKEN
 const bot = new Bot(`${tgToken}`);
