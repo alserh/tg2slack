@@ -33,7 +33,7 @@ function standardTextMessageBody(slackChannelId, headerText, who, buttonLink, me
 
             }
         ]
-    }
+    };
 }
 
-module.exports = { standardTextMessageBody }
+module.exports = { standardTextMessageBody };

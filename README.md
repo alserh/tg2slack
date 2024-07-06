@@ -39,4 +39,5 @@ Once the app is running: sending the message to a Telegram bot (TG_API_TOKEN) wi
     - here we can introduce something like an object file that will contain required formats, and invoke those formats on demand. 
     - added a workaround notification about media messages
 - Implement a backwards compatiability, allowing sending messages from Slack to TG
+	- in order to do so we want to map message types from TG to Slack and vice versa. This map requires learning types of `message` and comparing those to slack
 - It would be nice to figure out handling images and another kinds of content transitioning --> [docs](https://grammy.dev/plugins/files)
