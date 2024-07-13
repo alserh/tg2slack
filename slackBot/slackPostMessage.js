@@ -9,7 +9,7 @@ const slackToken = process.env.SLACK_API_TOKEN;
 
 function slackPostMessage(ctx) {
     const who = ctx.update.message.from.last_name ? ctx.update.message.from.first_name + " " + ctx.update.message.from.last_name : ctx.update.message.from.first_name;
-    const text = ctx.update.message.text ? ctx.update.message.text : "Looks like we got a file. Please refer to the original channel";
+    const text = ctx.update.message.text;
     const body = standardTextMessageBody(slackChannelId, settings.body_header_text, who, settings.tg_link, text);
 
     fetch("https://slack.com/api/chat.postMessage", {
@@ -17,7 +17,7 @@ function slackPostMessage(ctx) {
         body: JSON.stringify(body),
         headers: {
             "Content-Type": "application/json",
-            "Authorization": `${slackToken}`
+            "Authorization": `Bearer ${slackToken}`
         },
     });
 }
