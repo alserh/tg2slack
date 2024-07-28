@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 require("dotenv").config();
 const { App } = require("@slack/bolt");
 const { settings } = require("../settings");
