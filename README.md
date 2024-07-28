@@ -20,16 +20,16 @@ You will require to set up an `.env` file with the following parameters:
 - INBOUND_PORT = `your port`
 
 - TELEGRAM
-TG_API_TOKEN=`your token`
-TG_URL='https://api.telegram.org' `that's a base tg api url`
-TG_TEST_GROUP=`handy grp id to test` (should be PROD data on prod)
-TG_TEST_USER=`handy user id to test` (should be PROD data on prod)
+TG_API_TOKEN=`your token` 
+TG_URL='https://api.telegram.org' `that's a base tg api url` 
+TG_TEST_GROUP=`handy grp id to test` (should be PROD data on prod) 
+TG_TEST_USER=`handy user id to test` (should be PROD data on prod) 
 
 - SLACK
-SLACK_API_TOKEN=`Your Slack token`
-SLACK_SIGNIN_SECRET=`Your Slack Signin secret`
-SLACK_TEST_USER_ID=`handy user id to test` (should be PROD data on prod)
-SLACK_TEST_CHANNEL_ID=`handy grp id to test` (should be PROD data on prod)
+SLACK_API_TOKEN=`Your Slack token` 
+SLACK_SIGNIN_SECRET=`Your Slack Signin secret` 
+SLACK_TEST_USER_ID=`handy user id to test` (should be PROD data on prod) 
+SLACK_TEST_CHANNEL_ID=`handy grp id to test` (should be PROD data on prod) 
 
 
 In it's current form the app just echoes anything Telegram Bot receives to a selected Slack channel and some text can go back. 
