@@ -55,3 +55,5 @@ Once the app is running: sending the message to a Telegram bot (TG_API_TOKEN) wi
 - [x] *DONE* It would be nice to figure out handling images and another kinds of content transitioning --> [docs](https://grammy.dev/plugins/files)
 - [x] *DONE* Moved tg logic to local Express.js app
 - Move slack logic to local Express.js app
+- Update Dockerfile
+- Update Schema (maybe :D)
