@@ -4,7 +4,7 @@ const bodyParser = require("body-parser");
 const querystring = require("querystring");
 const { slackVerifyKey } = require("./slackBot/slackVerifyKey");
 const { tgRequestBodyProcessor } = require("./tgBot/tgRequestBodyProcessor");
-const { slackPostMessage } = require("./slackBot/slackPostMessage");
+const { slackEndpoints } = require("./slackBot/slackEndpointLib");
 const { tgPostMessage } = require("./tgBot/tgEndpointLib");
 const { tgFileOperator } = require("./fileProcessor/tgFileOperator");
 
@@ -53,11 +53,11 @@ app.post("/telegram", async (req, res) => {
 
         if (tgMessage.text != null) {
             operations.push(
-                slackPostMessage(tgMessage, tgMessage.edited)
+                slackEndpoints.slackPostMessage(tgMessage, tgMessage.edited)
             );
         }
         if (tgMessage.file != null) {
-            operations.push(tgFileOperator(tgMessage.file));
+            operations.push(tgFileOperator(tgMessage));
         }
 
         await Promise.all(operations);

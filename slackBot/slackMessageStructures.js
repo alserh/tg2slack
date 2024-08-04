@@ -57,7 +57,7 @@ function editedTextMessageBody(slackChannelId, headerText, who, buttonLink, mess
                 type: "section",
                 text: {
                     type: "mrkdwn",
-                    text: `${headerText} *${who}* :exclamation::exclamation::exclamation: *HAS EDITED A MESSAGE* :exclamation::exclamation::exclamation:` 
+                    text: `${headerText} *${who}* :exclamation::exclamation::exclamation: *HAS EDITED A MESSAGE* :exclamation::exclamation::exclamation:`
                 },
                 accessory: {
                     type: "button",
@@ -83,4 +83,9 @@ function editedTextMessageBody(slackChannelId, headerText, who, buttonLink, mess
     };
 }
 
-module.exports = { standardTextMessageBody, editedTextMessageBody };
+function authorTextWithFile(headerText, who) {
+    return `${headerText} *${who}* has sent *A FILE* :arrow_down:`;
+
+}
+
+module.exports = { standardTextMessageBody, editedTextMessageBody, authorTextWithFile };

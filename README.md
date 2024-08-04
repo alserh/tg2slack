@@ -54,8 +54,9 @@ Once the app is running: sending the message to a Telegram bot (TG_API_TOKEN) wi
 	- in order to do so we want to map message types from TG to Slack and vice versa. This map requires learning types of `message` and comparing those to slack
 - [x] *DONE* It would be nice to figure out handling images and another kinds of content transitioning --> [docs](https://grammy.dev/plugins/files)
 - [x] *DONE* Moved tg logic to local Express.js app
-- Move slack logic to local Express.js app
+- [x] *DONE* Move slack logic to local Express.js app
 - Update Dockerfile
 - Determine and cover w/ relevant tests
 - IDEA: An ability to send a private message to Slack from grp (case by case scenario, needs business logic)
+- Make "reply" message types for Slack display
 - :unicorn:

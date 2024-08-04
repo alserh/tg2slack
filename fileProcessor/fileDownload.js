@@ -14,4 +14,4 @@ const downloadFile = (async (url, fileName) => {
 });
 
 
-module.exports = {  downloadFile  };
+module.exports = { downloadFile };
