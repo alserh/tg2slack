@@ -9,7 +9,8 @@ export default [
   {
     rules: {
       quotes: ["error", "double"],
-      semi: ["error", "always"]
+      semi: ["error", "always"],
+      "no-undef": "off"
     }
   }
 ];

@@ -1,12 +1,39 @@
 {
+  "name": "tg2slack",
+  "version": "1.0.1",
+  "description": "Streaming messages from Telegram to Slack and vice versa",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alserh/tg2slack.git"
+  },
+  "keywords": [
+    "slack",
+    "telegram",
+    "echo",
+    "streaming"
+  ],
+  "author": "alserh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alserh/tg2slack/issues"
+  },
+  "homepage": "https://github.com/alserh/tg2slack#readme",
   "dependencies": {
-    "@slack/bolt": "^3.19.0",
+    "crypto": "^1.0.1",
     "dotenv": "^16.4.5",
-    "grammy": "^1.26.0"
+    "express": "^4.19.2",
+    "form-data": "^4.0.0",
+    "fs": "^0.0.1-security",
+    "node-fetch": "^2.7.0",
+    "stream": "^0.0.3"
   },
   "devDependencies": {
-    "@eslint/js": "^9.6.0",
-    "eslint": "^9.6.0",
-    "globals": "^15.8.0"
+    "@eslint/js": "^9.8.0",
+    "eslint": "^9.8.0",
+    "globals": "^15.9.0"
   }
 }
